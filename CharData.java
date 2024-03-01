@@ -4,16 +4,16 @@
 public class CharData {
 
 	// a character
-	char chr;
+	public char chr;
 
 	// a counter
-	int count; 
+	public int count; 
 
 	// a probability (number between 0 and 1)
-	double p;    
+	public double p;    
 
 	// a commulative probability (number between 0 and 1)
-	double cp;
+	public double cp;
 
 	/** Creates and initializes a character data object. */
 	public CharData(char chr) {

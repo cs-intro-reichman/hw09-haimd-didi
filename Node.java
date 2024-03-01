@@ -3,10 +3,10 @@
 public class Node {
    
     // a pointer to a CharData object
-    CharData cp;
+    public CharData cp;
  
     // a pointer to a Node object
-    Node next;  // pointer
+    public Node next;  // pointer
  
     /** Constructs a node with the given CharData object.
      *  The new node will point to the given next node. */
