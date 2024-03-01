@@ -39,12 +39,14 @@ public class List {
     /** GIVE Textual representation of this list. */
     public String toString() {
          StringBuilder str = new StringBuilder();
+         str.append("(");
          Node current = first;
 
          while (current != null) {
             str.append(current.cp.toString()+" ");
             current = current.next;
          }
+         str.append(")");
          return str.toString();
     }
 
@@ -68,7 +70,6 @@ public class List {
      *  increments its counter. Otherwise, adds a new CharData object with the
      *  given chr to the beginning of this list. */
     public void update(char chr) {
-        // Your code goes here
         Node curr = first;
         int i = indexOf(chr);
         if (i != -1) {
