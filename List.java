@@ -41,11 +41,14 @@ public class List {
          StringBuilder str = new StringBuilder();
          str.append("(");
          Node current = first;
+         str.append(current.cp.toString());
+         current = current.next; 
 
-         while (current != null) {
-            str.append(current.cp.toString()+" ");
+         while (current!= null) {
+            str.append(" " + current.cp.toString());
             current = current.next;
          }
+
          str.append(")");
          return str.toString();
     }
