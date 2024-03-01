@@ -1,8 +1,7 @@
 /** Represents an iterator over a list of CharData objects. */
 public class ListIterator {
-
     // Current position in the list (cursor)
-    Node current;
+    public Node current;
 
     /** Constructs a list iterator, starting at the given node. */
     public ListIterator(Node node) {
@@ -19,7 +18,7 @@ public class ListIterator {
      *  and advances the cursor to the next element.
      *  Should be called only if hasNext() is true. */
     public CharData next() {
-        CharData cd = current.cd;
+        CharData cd = current.cp;
         current = current.next;
         return cd;
     }
